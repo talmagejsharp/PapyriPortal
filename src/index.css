@@ -1,13 +1,115 @@
-body {
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+
+/* Global styles */
+
+html, body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scrolling caused by padding */
+  font-family: 'Cinzel', serif;
+  background-color: #f4e9dc;
+  color: #5a5343;
+  text-align: center;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  color: #6d4c3d; /* A deep, rich brown for links */
+  text-decoration: none; /* Removes underline from links */
 }
+
+a:hover {
+  color: #9a7f68; /* A lighter brown for link hover effect */
+}
+
+nav {
+  background-color: #d8c3a5;
+  width: 100%;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center; /* Center nav content horizontally */
+}
+
+nav a {
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #6d4c3d;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #7a5e4f; /* A dark, warm brown for headings */
+}
+
+button {
+  background-color: #8d7866; /* A muted brown for buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #a3907c;
+}
+
+.form-wrapper {
+  border: 2px solid #8d7866; /* Adds a border around the form */
+  border-radius: 8px; /* Rounds the corners of the form border */
+  padding: 20px; /* Adds some space inside the form, around the elements */
+  margin: auto; /* Adds some space outside the form */
+  margin-top: 3%;
+  background-color: #f4e9dc; /* Matches the ancient theme */
+  width: fit-content; /* Adjusts the width of the form to fit its content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aligns form items in the center */
+}
+
+label {
+  margin-bottom: 10px; /* Adds space below each label */
+  font-size: 16px; /* Adjusts the font size for readability */
+  color: #5a5343; /* Color that matches your theme */
+  text-align: left;
+  width: 100%; /* Ensures labels align with inputs */
+}
+
+input[type="text"] {
+  margin-bottom: 20px; /* Adds space below each input */
+  padding: 10px; /* Adds some padding inside the inputs */
+  border: 1px solid #ccc; /* A light border for the inputs */
+  border-radius: 4px; /* Rounds the corners of the inputs */
+  width: calc(100% - 22px); /* Adjusts input width to fit within the form */
+  background-color: #e8dcb9; /* A light background color for inputs */
+}
+
+button[type="submit"] {
+  padding: 10px 20px; /* Adjusts padding inside the button */
+  font-size: 16px; /* Increases font size for readability */
+  cursor: pointer; /* Changes cursor to indicate button can be clicked */
+  border: none; /* Removes the default border */
+  border-radius: 4px; /* Rounds the corners of the button */
+  color: white; /* Text color for the button */
+  background-color: #8d7866; /* Button color that fits the theme */
+  width: 50%; /* Sets the button width to half of its container's width */
+  align-self: center; /* Centers the button within the form */
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh;  */
+  
+  /* Adjust based on your layout */
+}
+
